@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if district == "Kottayam" %}
+ <div class=" mb-3" id="sub" >
+                <label  class="form-label">Select District</label>
+                <select class="float-right btn form-control" name="sub"  >
+                    <option value="Etumanoor">Etumanoor</option>
+                    <option value="Kanjirappally">Kanjirappally</option>
+                </select>
+    </div>
+{% elif district == "Eranakulam" %}
+<div class=" mb-3">
+                <label  class="form-label">Branch</label>
+                <select class="float-right btn form-control" name="sub" >
+                    <option value="Aluva">Aluva</option>
+                    <option value="Kakkanad">Kakkanad</option>
+                </select>
+    </div>
+{% elif district == "Thrissur" %}
+<div class=" mb-3">
+                <label  class="form-label">Branch</label>
+                <select class="float-right btn form-control" name="sub" >
+                    <option value="Wadakkanchery">Wadakkanchery</option>
+                    <option value="kunnamkulam">kunnamkulam</option>
+                </select>
+    </div>
+{% elif district == "Palakkad" %}
+<div class=" mb-3">
+                <label  class="form-label">Branch</label>
+                <select class="float-right btn form-control" name="sub" >
+                    <option value="pattambi">pattambi</option>
+                    <option value="chittur">chittur</option>
+                </select>
+    </div>
+{% elif district == "Malapuram" %}
+<div class=" mb-3">
+                <label  class="form-label">Branch</label>
+                <select class="float-right btn form-control" name="sub" >
+                    <option value="eddapal">eddapal</option>
+                    <option value="ponanni">ponanni</option>
+                </select>
+    </div>
+
+{% else %}
+<h6>Please Select a District</h6>
+{% endif %}
+</body>
+</html>
